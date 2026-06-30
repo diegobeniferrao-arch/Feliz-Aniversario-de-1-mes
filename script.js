@@ -119,10 +119,7 @@ btnMusica.addEventListener("click", () => {
 
     clearInterval(chuva);
 
-    window.open(
-      "https://open.spotify.com/track/6owwZC8gUvrBuygvOHaYXb",
-      "_blank"
-    );
+   window.open("https://open.spotify.com/track/6owwZC8gUvrBuygvOHaYXb?autoplay=1", "_blank");
 
   }, 3000);
 
