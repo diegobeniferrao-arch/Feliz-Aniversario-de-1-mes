@@ -1,3 +1,4 @@
+```javascript
 const btnAbrir = document.getElementById("btnAbrir");
 const telaInicial = document.getElementById("telaInicial");
 const amor = document.getElementById("amor");
@@ -5,6 +6,9 @@ const galeria = document.getElementById("galeria");
 const cartaFinal = document.getElementById("cartaFinal");
 const musica = document.getElementById("musica");
 const polaroids = document.querySelectorAll(".polaroid");
+
+const btnMusica = document.getElementById("btnMusica");
+const finalSurpresa = document.getElementById("finalSurpresa");
 
 /* ❤️ CORAÇÕES */
 function criarCoracao() {
@@ -101,3 +105,26 @@ function mostrarCarta() {
 
   digitar();
 }
+
+/* 🎵 SURPRESA FINAL */
+btnMusica.addEventListener("click", () => {
+
+  finalSurpresa.style.display = "flex";
+
+  // chuva de corações
+  const chuva = setInterval(criarCoracao, 150);
+
+  // abre a música após 3 segundos
+  setTimeout(() => {
+
+    clearInterval(chuva);
+
+    window.open(
+      "https://open.spotify.com/track/6owwZC8gUvrBuygvOHaYXb",
+      "_blank"
+    );
+
+  }, 3000);
+
+});
+```
