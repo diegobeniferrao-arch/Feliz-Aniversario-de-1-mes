@@ -28,6 +28,7 @@ body {
   font-size: 22px;
 }
 
+/* 🔘 BOTÕES GERAIS */
 button {
   margin-top: 20px;
   padding: 12px 22px;
@@ -91,7 +92,7 @@ button:hover {
   font-size:18px;
 }
 
-/* 💌 CARTA */
+/* 💌 CARTA FINAL */
 .carta-final{
   display:none;
   max-width:650px;
@@ -114,7 +115,7 @@ button:hover {
   white-space:pre-wrap;
 }
 
-/* 🎵 BOTÃO FINAL */
+/* 🎵 BOTÃO FINAL (MÚSICA) */
 .musica{
   display:none;
   text-align:center;
@@ -122,10 +123,16 @@ button:hover {
 }
 
 #btnMusica{
+  display: inline-block;
   background:#1DB954;
   padding:16px 34px;
   font-size:22px;
   border-radius:40px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
 #btnMusica:hover{
